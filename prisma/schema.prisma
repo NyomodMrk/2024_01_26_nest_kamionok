@@ -9,3 +9,10 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Soforok {
+  id Int @id @default(autoincrement())
+  name String
+  vehicle String
+  kilometers Int
+}
